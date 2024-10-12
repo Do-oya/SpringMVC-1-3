@@ -1,23 +1,17 @@
-package hello.itemservice.domain.item;
+package hello.itemservice.domain;
 
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 public class Item {
 
-    private Long id;
+    private Long Id;
     private String itemName;
     private Integer price;
     private Integer quantity;
 
-    private Boolean open;
-    private List<String> regions;
-    private ItemType itemType;
-    private String deliveryCode;
-
-    public Item() {}
+    public Item() {
+    }
 
     public Item(String itemName, Integer price, Integer quantity) {
         this.itemName = itemName;
